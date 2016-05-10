@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "es3",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "files": [
+    "./src/ngc_loader.ts",
+    "./src/index.d.ts",
+    "./node_modules/@angular/compiler-cli/index.d.ts",
+    "./node_modules/@angular/compiler-cli/main.d.ts"
+  ]
+}
