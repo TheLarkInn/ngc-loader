@@ -1,0 +1,7 @@
+# Dev #
+*.ts
+!*.d.ts
+tests
+karma.conf.js
+karma-test-shim.js
+node_modules

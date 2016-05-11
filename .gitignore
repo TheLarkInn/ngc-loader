@@ -1,0 +1,8 @@
+# Generated #
+src/*.js
+!karma.conf.js
+!karma-test-shim.js
+*.map
+*.d.ts
+typings
+node_modules
