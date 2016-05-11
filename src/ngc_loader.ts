@@ -1,5 +1,6 @@
 import 'ts-metadata-collector';
 import 'reflect-metadata';
+import {lstatSync} from 'fs';
 
 var path = require('path');
 var fs = require('fs');
@@ -9,16 +10,18 @@ var ts = require('typescript');
 
 var ngCompiler = require('@angular/compiler-cli/main.js');
 import {CodeGenerator, MetadataWriterHost, NodeReflectorHost, TsickleHost} from '@angular/compiler-cli';
-import {singleTsc} from './single_tsc.ts';
+import {singleTsc} from './single_tsc';
 
 
-var ngcLoader: Function = (source: string): string => {  
+var ngcLoader = function(source) {
+  var compiler = this._compiler;
+  var compilation = this._compilation;
+  
   debugger;
   this.cacheable && this.cacheable();
-
-  console.log(this);
-
-  // singleTsc.readConfiguration()
+  
+  
+  singleTsc.readConfiguration(compiler.context, compiler.context);
   
   return singleTsc.recieveAndEmitSingle(source);
 }

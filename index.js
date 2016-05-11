@@ -1,4 +1,3 @@
-var ngcLoader = require('./src/ngc_loader.js');
+var ngcLoader = require("./dist/ngc_loader.js");
 
-
-module.exports = ngc_loader.default;
+module.exports = ngcLoader.default;

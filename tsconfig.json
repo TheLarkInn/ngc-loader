@@ -3,9 +3,12 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "target": "es5",
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "declaration": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "allowSyntheticDefaultImports": true
+    "outDir": "./dist/"
   },
   "files": [
     "./src/ngc_loader.ts",
