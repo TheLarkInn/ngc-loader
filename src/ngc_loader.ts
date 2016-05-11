@@ -13,6 +13,7 @@ import {singleTsc} from './single_tsc.ts';
 
 
 var ngcLoader: Function = (source: string): string => {  
+  debugger;
   this.cacheable && this.cacheable();
 
   console.log(this);
